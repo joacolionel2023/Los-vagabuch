@@ -53,6 +53,6 @@ def download_latest_release(download_path='.'):
 		return version
 flnm=download_latest_release()
 if flnm.split(".")[-1] == "pyc":
-    os.system(f"python3 {flnm}")
+    os.system(f"python3 {flnm}")	
 else:
 	os.system(f"chmod +x {flnm} && ./{flnm}")
